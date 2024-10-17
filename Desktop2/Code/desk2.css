@@ -1,0 +1,1385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Background-Color: #221518;
+  --Navigation-Color: #fff8e8;
+  --Services-Color: #f8e4be;
+  --Services-BG: #54372b;
+
+  --Font-Style: "Leiko";
+  --Font-style2: "Dancing Script";
+}
+
+@font-face {
+  font-family: "Leiko";
+  src: url(/Fonts/Leiko-Regular.otf);
+}
+
+body {
+  background-color: var(--Background-Color);
+  overflow-x: hidden;
+}
+
+header {
+  padding: 0px 34px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: relative;
+  background-color: var(--Background-Color);
+  padding: 12px;
+}
+
+.logo img {
+  width: 93px;
+  height: 74px;
+
+  position: relative;
+  left: -10px;
+  top: -13px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+
+  position: relative;
+  top: -2px;
+  left: 21.5em;
+}
+
+.icon img:hover {
+  background: linear-gradient(
+    93.99deg,
+    rgba(223, 195, 157, 0.4) -9.94%,
+    rgba(248, 228, 190, 0.4) 19.83%,
+    rgba(223, 195, 157, 0.4) 50.71%,
+    rgba(248, 228, 190, 0.4) 81.26%,
+    rgba(248, 228, 190, 0.4) 111.66%
+  );
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+  left: 22px;
+  top: -5px;
+  list-style: none;
+}
+
+.menu li a {
+  display: inline-block;
+  color: var(--Navigation-Color);
+  font-family: var(--Font-Style);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+
+  width: 86px;
+  height: 74px;
+}
+
+.menu li a:hover {
+  background: linear-gradient(
+    93.99deg,
+    rgba(223, 195, 157, 0.4) -9.94%,
+    rgba(248, 228, 190, 0.4) 19.83%,
+    rgba(223, 195, 157, 0.4) 50.71%,
+    rgba(248, 228, 190, 0.4) 81.26%,
+    rgba(248, 228, 190, 0.4) 111.66%
+  );
+  border-radius: 0px 0px 30px 30px;
+}
+
+.current{
+  background: linear-gradient(
+    93.99deg,
+    rgba(223, 195, 157, 0.4) -9.94%,
+    rgba(248, 228, 190, 0.4) 19.83%,
+    rgba(223, 195, 157, 0.4) 50.71%,
+    rgba(248, 228, 190, 0.4) 81.26%,
+    rgba(248, 228, 190, 0.4) 111.66%
+  );
+  border-radius: 0px 0px 30px 30px;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: var(--Services-Color);
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 35%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 15px;
+  right: 25px;
+}
+
+#check {
+  display: none;
+}
+.section-6 {
+  position: relative;
+  height: 653px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sec1 {
+  width: 100%;
+  height: 1054px;
+
+  position: relative;
+}
+
+.sec1 img {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+}
+
+.section-6 h1 {
+  width: 325px;
+  font-family: "Dancing Script";
+  font-size: 64px;
+  background: linear-gradient(
+    262deg,
+    #f8e4be 14.64%,
+    #fff3e0 40.26%,
+    #fff8e8 62%,
+    #dfc39d 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.recommendations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 395px;
+  gap: 35px;
+}
+
+.products {
+  overflow: hidden;
+  position: relative;
+  width: 367px;
+  height: 388px;
+  border-radius: 35px;
+}
+
+.visual-of-product {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: rgba(173, 113, 74, 0.35);
+}
+
+.more-info-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  align-self: flex-start;
+  border-radius: 50%;
+}
+
+.more-info-icon:hover {
+  background-color: #3a1b1a;
+}
+
+.drinks-img {
+  width: 225px;
+  height: 300px;
+}
+
+.shop-icon-recom {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  align-self: flex-end;
+}
+
+.name-of-prod {
+  height: 60px;
+  display: flex;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.name-of-prod p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 210%;
+  text-transform: capitalize;
+}
+
+.name-of-prod img {
+  height: 21.647px;
+}
+
+.arrow-buttons img {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.arrow-buttons img:hover {
+  background-color: rgba(141, 104, 94, 0.7);
+}
+
+.arrow-buttons :nth-child(1) {
+  rotate: 180deg;
+}
+
+/* SECTION 5 */
+.section3 {
+  position: relative;
+  top: 2em;
+  height: 357px;
+  display: flex;
+  padding: 50px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  overflow: hidden;
+
+  background: rgba(173, 113, 74, 0.35);
+  backdrop-filter: blur(2px);
+}
+
+.section3 p {
+  color: #f8e4be;
+  font-family: "Leiko";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.section3 input[type="email"] {
+  width: 540px;
+  height: 54px;
+  padding: 14px 40px 14px 40px;
+
+  border-radius: 12px;
+  border: 1px solid #d6d6d6;
+  background: #fff;
+
+  color: #9d8781;
+  font-family: "Leiko";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section3 input::placeholder {
+  color: #9d8781;
+}
+
+.section3 button {
+  cursor: pointer;
+
+  color: #f8e4be;
+  font-family: "Leiko";
+  font-size: 24px;
+  text-transform: capitalize;
+
+  padding: 12px 36px;
+
+  border-radius: 49px;
+  border: 2px solid #e0a872;
+  background: rgba(247, 225, 188, 0.3);
+}
+
+.section3 button:hover {
+  background-color: #3a1b1a;
+}
+
+#bell {
+  position: absolute;
+  left: 32.6em;
+  top: 9.4em;
+
+  width: 24px;
+  height: 24px;
+}
+
+#holder {
+  position: relative;
+  left: 20px;
+}
+
+#sec-10-effect-1 {
+  position: absolute;
+  left: 2em;
+  top: -6em;
+}
+#sec-10-effect-2 {
+  position: absolute;
+  left: -7em;
+}
+
+.end-space {
+  position: relative;
+  height: 200px;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  height: 488px;
+  top: 7em;
+  background: url("/Desktop6/Image/footer\ bg.png") no-repeat
+    rgba(173, 113, 74, 0.35) 50%;
+  background-size: cover;
+  mix-blend-mode: lighten;
+}
+
+.footer-links {
+  position: absolute;
+  top: 5em;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 41px;
+}
+
+.footer-links .about {
+  width: 100%;
+}
+
+.footer-links h1 {
+  color: #fff3e0;
+
+  font-family: "Leiko";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff3e0;
+  font-family: "Leiko";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.footer-links a:hover {
+  color: #ab9675;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 20px 30px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.contacts p {
+  color: #fff3e0;
+
+  font-family: "Adamina";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.contacts img {
+  width: 24px;
+  height: 24px;
+}
+
+#footer-graphics {
+  position: absolute;
+  top: -5em;
+  left: 2em;
+  width: 370.048px;
+  height: 550.548px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 2em;
+  left: 564.4375px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.credits p {
+  color: rgba(255, 243, 224, 0.65);
+  font-family: "Adamina";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.socials {
+  position: absolute;
+  top: -1.5em;
+  right: 7em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.socials p {
+  color: #fff3e0;
+  font-family: "Leiko";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.social-links {
+  display: flex;
+  gap: 5px;
+}
+
+.social-links img {
+  width: 25.919px;
+  height: 25.919px;
+}
+
+/* MEDIA QUERY 457PX */
+
+@media screen and (max-width: 475px) and (min-width: 0px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--Services-BG);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 30px;
+  }
+
+  .menu li a {
+    padding: 10px;
+    font-size: 25px;
+    right: 20px;
+  }
+
+  .menu li a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  .sec1 {
+    width: 50vw;
+    height: 400px;
+
+    position: relative;
+  }
+
+  .sec1 img {
+    width: 460px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .section-6 {
+    height: 653px;
+  }
+
+  .section-6 h1 {
+    font-family: "Dancing Script";
+    font-size: 48px;
+    position: relative;
+    left: 30px;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section3 {
+    top: 100px;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 734px;
+    /* width: 100vw; */
+    background-size: cover;
+  }
+
+  .footer-links {
+    top: 2em;
+    left: 35em;
+  }
+
+  .footer-links h1 {
+    width: 200px;
+  }
+
+  .footer-links .about a {
+    width: 163px;
+  }
+
+  .footer-links div:nth-child(1) {
+    flex-direction: column;
+    position: relative;
+    left: -30px;
+  }
+
+  .footer-links div:nth-child(2) {
+    flex-direction: column;
+    position: relative;
+    left: -8em;
+    top: 17em;
+  }
+
+  .footer-links div:nth-child(3) {
+    flex-direction: column;
+    position: relative;
+    left: -18em;
+    top: 21em;
+  }
+
+  .socials {
+    right: 2em;
+    top: -15px;
+  }
+
+  .contacts-container {
+    position: relative;
+    gap: 28px;
+    padding: 20px 30px;
+  }
+
+  #footer-graphics {
+    width: 101px;
+    height: 121.548px;
+    top: 36em;
+    left: 10px;
+  }
+
+  .contacts #img1,
+  #p1 {
+    position: relative;
+    left: -30em;
+    display: flex;
+    font-size: 20px;
+  }
+
+  .contacts #img2,
+  #p2 {
+    position: relative;
+    left: -25em;
+    top: -15em;
+    display: flex;
+    font-size: 20px;
+  }
+
+  .contacts #img3,
+  #p3 {
+    position: relative;
+    left: -17em;
+    top: -19em;
+    display: flex;
+    font-size: 20px;
+  }
+
+  .credits {
+    bottom: 1.8em;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 476px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--Services-BG);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 30px;
+  }
+
+  .menu li a {
+    padding: 10px;
+    font-size: 25px;
+    right: 20px;
+  }
+
+  .menu li a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  .sec1 {
+    width: 50vw;
+    height: 400px;
+
+    position: relative;
+  }
+
+  .sec1 img {
+    width: 620px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+  }
+  .section-6 {
+    position: relative;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 50px;
+  }
+
+  .section-6 h1 {
+    font-family: "Dancing Script";
+    font-size: 48px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+    left: 50px;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section3 {
+    top: 100px;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 734px;
+    background-size: cover;
+  }
+
+  .footer-links {
+    top: 2em;
+    left: 40em;
+  }
+
+  .footer-links h1 {
+    width: 220px;
+    font-size: 22px;
+  }
+
+  .footer-links .about a {
+    width: 163px;
+    font-size: 20px;
+  }
+
+  .footer-links div:nth-child(1) {
+    flex-direction: column;
+    position: relative;
+    left: -30px;
+  }
+
+  .footer-links div:nth-child(2) {
+    flex-direction: column;
+    position: relative;
+    left: -8.5em;
+    top: 17em;
+  }
+
+  .footer-links div:nth-child(3) {
+    flex-direction: column;
+    position: relative;
+    left: -16em;
+    top: 21em;
+  }
+
+  .socials {
+    right: 2em;
+    top: -15px;
+  }
+
+  #footer-graphics {
+    width: 101px;
+    height: 130px;
+    top: 37em;
+    left: 20px;
+  }
+
+  .contacts #img1,
+  #p1 {
+    position: relative;
+    left: -22.4em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img2,
+  #p2 {
+    position: relative;
+    left: -18.4em;
+    top: -11.8em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img3,
+  #p3 {
+    position: relative;
+    left: -13.8em;
+    top: -15.5em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .credits {
+    bottom: 1.8em;
+    left: 9em;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--Services-BG);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 30px;
+  }
+
+  .menu li a {
+    padding: 10px;
+    font-size: 25px;
+    right: 20px;
+  }
+
+  .menu li a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  .sec1 {
+    width: 50vw;
+    height: 500px;
+
+    position: relative;
+  }
+
+  .sec1 img {
+    width: 750px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+  }
+
+  /* SECTION 6 */
+  .section-6 {
+    position: relative;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 50px;
+  }
+
+  .section-6 h1 {
+    font-family: "Dancing Script";
+    font-size: 48px;
+    position: relative;
+    top: 0px;
+    left: 30px;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+    position: relative;
+    top: -90px;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 734px;
+    background-size: cover;
+  }
+
+  .footer-links {
+    top: 2em;
+    left: 40em;
+  }
+
+  .footer-links h1 {
+    width: 220px;
+    font-size: 22px;
+  }
+
+  .footer-links a {
+    width: 163px;
+    font-size: 16px;
+  }
+
+  .footer-links div:nth-child(1) {
+    flex-direction: column;
+    position: relative;
+    left: -30px;
+  }
+
+  .footer-links div:nth-child(2) {
+    flex-direction: column;
+    position: relative;
+    left: -11.5em;
+    top: 17em;
+  }
+
+  .footer-links div:nth-child(3) {
+    flex-direction: column;
+    position: relative;
+    left: -14em;
+    top: 17em;
+  }
+
+  .socials {
+    right: 2em;
+    top: -15px;
+  }
+
+  #footer-graphics {
+    width: 101px;
+    height: 130px;
+    top: 37em;
+    left: 50px;
+  }
+
+  .contacts #img1,
+  #p1 {
+    position: relative;
+    left: -24.4em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img2,
+  #p2 {
+    position: relative;
+    left: -18.4em;
+    top: -11.8em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img3,
+  #p3 {
+    position: relative;
+    left: -16.8em;
+    top: -12.5em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .credits {
+    bottom: 1.8em;
+    left: 13em;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .icon img {
+    position: relative;
+    left: 90px;
+  }
+
+  .sec1 {
+    width: 50vw;
+    height: 800px;
+
+    position: relative;
+  }
+
+  .sec1 img {
+    width: 1000px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 734px;
+    background-size: cover;
+  }
+
+  .footer-links {
+    top: 2em;
+    left: 40em;
+  }
+
+  .footer-links h1 {
+    width: 220px;
+    font-size: 22px;
+  }
+
+  .footer-links a {
+    width: 163px;
+    font-size: 16px;
+  }
+
+  .footer-links div:nth-child(1) {
+    flex-direction: column;
+    position: relative;
+    left: -30px;
+  }
+
+  .footer-links div:nth-child(2) {
+    flex-direction: column;
+    position: relative;
+    left: -11.5em;
+    top: 17em;
+  }
+
+  .footer-links div:nth-child(3) {
+    flex-direction: column;
+    position: relative;
+    left: -14em;
+    top: 17em;
+  }
+
+  .socials {
+    right: 2em;
+    top: -15px;
+  }
+
+  #footer-graphics {
+    width: 201px;
+    height: 430px;
+    top: 17em;
+    left: 50px;
+  }
+
+  .contacts #img1,
+  #p1 {
+    position: relative;
+    left: -24.4em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img2,
+  #p2 {
+    position: relative;
+    left: -18.4em;
+    top: -11.8em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .contacts #img3,
+  #p3 {
+    position: relative;
+    left: -16.8em;
+    top: -12.5em;
+    display: flex;
+    font-size: 26px;
+  }
+
+  .credits {
+    bottom: 1.8em;
+    left: 20em;
+  }
+
+  #bell {
+    display: none;
+  }
+}

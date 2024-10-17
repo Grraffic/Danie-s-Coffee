@@ -1,0 +1,2652 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Background-Color: #221518;
+  --Navigation-Color: #fff8e8;
+  --Services-Color: #f8e4be;
+  --Services-BG: #54372b;
+
+  --Font-Style: "Leiko";
+  --Font-style2: "Dancing Script";
+}
+
+@font-face {
+  font-family: "Leiko";
+  src: url(/Fonts/Leiko-Regular.otf);
+}
+
+body {
+  background-color: #221518;
+}
+
+@media screen and (min-width: 0px) and (max-width: 475px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px 0 0;
+  }
+
+  #Daniels-Logo {
+    height: 50px;
+    flex-shrink: 0;
+  }
+  .other-func img {
+    width: 30px;
+    height: 30px;
+  }
+  .sub-menu {
+    display: none;
+
+    .current {
+      background: linear-gradient(
+        93.99deg,
+        rgba(223, 195, 157, 0.4) -9.94%,
+        rgba(248, 228, 190, 0.4) 19.83%,
+        rgba(223, 195, 157, 0.4) 50.71%,
+        rgba(248, 228, 190, 0.4) 81.26%,
+        rgba(248, 228, 190, 0.4) 111.66%
+      );
+      border-radius: 0px 0px 30px 30px;
+    }
+  }
+  /* SECTION-1 */
+
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .section1-blur {
+    display: none;
+  }
+
+  .section1-blur img {
+    display: none;
+  }
+
+  .section-1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 85%;
+    border-radius: 35px;
+    background: rgba(173, 113, 74, 0.35);
+
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .section-1-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-1 h1 {
+    font-family: var(--Font-style2);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px rgba(32, 19, 22, 0.62),
+      0px 3px 6px rgba(32, 19, 22, 0.6), 0px 11px 11px rgba(32, 19, 22, 0.52),
+      0px 25px 15px rgba(32, 19, 22, 0.31), 0px 44px 18px rgba(32, 19, 22, 0.09),
+      0px 69px 19px rgba(32, 19, 22, 0.01);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .section-1 h2 {
+    font-family: var(--Font-style2);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2),
+      0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  .section-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-1-text p {
+    color: #fff;
+    text-overflow: ellipsis;
+    font-family: var(--Font-Style);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 218.5%; /* 39.33px */
+    text-transform: capitalize;
+  }
+
+  .btn {
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .current {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .btn1 {
+    color: #f8e4be;
+    background: none;
+    font-family: var(--Font-Style);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgba(247, 225, 188, 0.1);
+  }
+
+  /* SECTION 2 */
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-2 h1,
+  .section-3 h1,
+  .section-4 h1 {
+    font-family: "Dancing Script";
+    font-size: 30px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-2 .vector1 {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section-2 .vector2 {
+    display: none;
+  }
+
+  /* SECTION 3 */
+
+  .section-3 .vector3 {
+    display: none;
+  }
+
+  .section-3 .vector4 {
+    display: none;
+  }
+
+  /* SECTION 4 */
+
+  .section-4 .vector5 {
+    display: none;
+  }
+
+  .section-10 {
+    position: relative;
+    height: 357px;
+    display: flex;
+    padding: 50px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    overflow: hidden;
+
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .section-10 p {
+    text-align: center;
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-10 input[type="email"] {
+    height: 54px;
+    width: 400px;
+    padding: 10px;
+
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+
+    color: #9d8781;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-10 input::placeholder {
+    color: #9d8781;
+  }
+
+  .section-10 button {
+    cursor: pointer;
+
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 24px;
+    text-transform: capitalize;
+
+    padding: 12px 36px;
+
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .section-10 button:hover {
+    background-color: #3a1b1a;
+  }
+  #sec-10-effect-1 {
+    display: none;
+  }
+  #sec-10-effect-2 {
+    display: none;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  .end-space {
+    position: relative;
+    height: 200px;
+  }
+
+  footer {
+    position: relative;
+    height: 734px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: url("project imgs/footer\ bg.png") no-repeat
+      rgba(173, 113, 74, 0.35) 50%;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    padding: 10px;
+  }
+
+  .footer-links {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-links h1 {
+    color: #fff3e0;
+
+    font-family: "Leiko";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a:hover {
+    color: #ab9675;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .contacts p {
+    color: #fff3e0;
+
+    font-family: "Adamina";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .contacts img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #footer-graphics {
+    display: none;
+  }
+
+  .credits {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .credits p {
+    color: rgba(255, 243, 224, 0.65);
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .socials {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .socials p {
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-links img {
+    width: 25.919px;
+    height: 25.919px;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 640px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px 0 0;
+  }
+
+  #Daniels-Logo {
+    height: 75px;
+    flex-shrink: 0;
+  }
+  .other-func img {
+    width: 30px;
+    height: 30px;
+  }
+  .sub-menu {
+    display: none;
+  }
+  /* SECTION-1 */
+
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .section1-blur {
+    display: none;
+  }
+
+  .section1-blur img {
+    display: none;
+  }
+
+  .section-1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 85%;
+    border-radius: 35px;
+    background: rgba(173, 113, 74, 0.35);
+
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .section-1-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-1 h1 {
+    font-family: var(--Font-style2);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px rgba(32, 19, 22, 0.62),
+      0px 3px 6px rgba(32, 19, 22, 0.6), 0px 11px 11px rgba(32, 19, 22, 0.52),
+      0px 25px 15px rgba(32, 19, 22, 0.31), 0px 44px 18px rgba(32, 19, 22, 0.09),
+      0px 69px 19px rgba(32, 19, 22, 0.01);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .section-1 h2 {
+    font-family: var(--Font-style2);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2),
+      0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  .section-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-1-text p {
+    color: #fff;
+    text-overflow: ellipsis;
+    font-family: var(--Font-Style);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 218.5%; /* 39.33px */
+    text-transform: capitalize;
+  }
+
+  .btn {
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .btn1 {
+    color: #f8e4be;
+    background: none;
+    font-family: var(--Font-Style);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgba(247, 225, 188, 0.1);
+  }
+
+  /* SECTION 2 */
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-2 h1,
+  .section-3 h1,
+  .section-4 h1 {
+    font-family: "Dancing Script";
+    font-size: 42px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-2 .vector1 {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section-2 .vector2 {
+    display: none;
+  }
+
+  /* SECTION 3 */
+
+  .section-3 .vector3 {
+    display: none;
+  }
+
+  .section-3 .vector4 {
+    display: none;
+  }
+
+  /* SECTION 4 */
+
+  .section-4 .vector5 {
+    display: none;
+  }
+
+  /* SUBSCRIBE SECTION */
+
+  .section-10 {
+    position: relative;
+    height: 357px;
+    display: flex;
+    padding: 50px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    overflow: hidden;
+
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .section-10 p {
+    text-align: center;
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-10 input[type="email"] {
+    height: 54px;
+    width: 400px;
+    padding: 10px;
+
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+
+    color: #9d8781;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-10 input::placeholder {
+    color: #9d8781;
+  }
+
+  .section-10 button {
+    cursor: pointer;
+
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 24px;
+    text-transform: capitalize;
+
+    padding: 12px 36px;
+
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .section-10 button:hover {
+    background-color: #3a1b1a;
+  }
+
+  #sec-10-effect-1 {
+    display: none;
+  }
+  #sec-10-effect-2 {
+    display: none;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  .end-space {
+    position: relative;
+    height: 200px;
+  }
+
+  footer {
+    position: relative;
+    height: 734px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: url("project imgs/footer\ bg.png") no-repeat
+      rgba(173, 113, 74, 0.35) 50%;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    padding: 10px;
+  }
+
+  .footer-links {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-links h1 {
+    color: #fff3e0;
+
+    font-family: "Leiko";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a:hover {
+    color: #ab9675;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .contacts p {
+    color: #fff3e0;
+
+    font-family: "Adamina";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .contacts img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #footer-graphics {
+    display: none;
+  }
+
+  .credits {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .credits p {
+    color: rgba(255, 243, 224, 0.65);
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .socials {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .socials p {
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-links img {
+    width: 25.919px;
+    height: 25.919px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 641px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px 0 0;
+  }
+
+  #Daniels-Logo {
+    height: 75px;
+    flex-shrink: 0;
+  }
+  .other-func img {
+    width: 30px;
+    height: 30px;
+  }
+  .sub-menu {
+    display: none;
+  }
+  /* SECTION-1 */
+
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .section1-blur {
+    display: none;
+  }
+
+  .section1-blur img {
+    display: none;
+  }
+
+  .section-1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 85%;
+    border-radius: 35px;
+    background: rgba(173, 113, 74, 0.35);
+
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .section-1-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-1 h1 {
+    font-family: var(--Font-style2);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px rgba(32, 19, 22, 0.62),
+      0px 3px 6px rgba(32, 19, 22, 0.6), 0px 11px 11px rgba(32, 19, 22, 0.52),
+      0px 25px 15px rgba(32, 19, 22, 0.31), 0px 44px 18px rgba(32, 19, 22, 0.09),
+      0px 69px 19px rgba(32, 19, 22, 0.01);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .section-1 h2 {
+    font-family: var(--Font-style2);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2),
+      0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  .section-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-1-text p {
+    color: #fff;
+    text-overflow: ellipsis;
+    font-family: var(--Font-Style);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 218.5%; /* 39.33px */
+    text-transform: capitalize;
+  }
+
+  .btn {
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .btn1 {
+    color: #f8e4be;
+    background: none;
+    font-family: var(--Font-Style);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgba(247, 225, 188, 0.1);
+  }
+
+  /* SECTION 2 */
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-2 h1,
+  .section-3 h1,
+  .section-4 h1 {
+    font-family: "Dancing Script";
+    font-size: 42px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-2 .vector1 {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 5px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 210px;
+    height: 220px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 92px;
+    height: 148px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section-2 .vector2 {
+    display: none;
+  }
+
+  /* SECTION 3 */
+
+  .section-3 .vector3 {
+    display: none;
+  }
+
+  .section-3 .vector4 {
+    display: none;
+  }
+
+  /* SECTION 4 */
+
+  .section-4 .vector5 {
+    display: none;
+  }
+
+  /* SUBSCRIBE SECTION */
+
+  .section-10 {
+    position: relative;
+    height: 357px;
+    display: flex;
+    padding: 50px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    overflow: hidden;
+
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .section-10 p {
+    text-align: center;
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-10 input[type="email"] {
+    height: 54px;
+    width: 400px;
+    padding: 10px;
+
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+
+    color: #9d8781;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-10 input::placeholder {
+    color: #9d8781;
+  }
+
+  .section-10 button {
+    cursor: pointer;
+
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 24px;
+    text-transform: capitalize;
+
+    padding: 12px 36px;
+
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .section-10 button:hover {
+    background-color: #3a1b1a;
+  }
+
+  #sec-10-effect-1 {
+    display: none;
+  }
+  #sec-10-effect-2 {
+    display: none;
+  }
+
+  #bell {
+    display: none;
+  }
+
+  .end-space {
+    position: relative;
+    height: 200px;
+  }
+
+  footer {
+    position: relative;
+    height: 734px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: url("project imgs/footer\ bg.png") no-repeat
+      rgba(173, 113, 74, 0.35) 50%;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    padding: 10px;
+  }
+
+  .footer-links {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-links h1 {
+    color: #fff3e0;
+
+    font-family: "Leiko";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a:hover {
+    color: #ab9675;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .contacts p {
+    color: #fff3e0;
+
+    font-family: "Adamina";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .contacts img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #footer-graphics {
+    display: none;
+  }
+
+  .credits {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .credits p {
+    color: rgba(255, 243, 224, 0.65);
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .socials {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .socials p {
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-links img {
+    width: 25.919px;
+    height: 25.919px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    padding: 0px 34px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #Daniels-Logo {
+    height: 74px;
+    flex-shrink: 0;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    width: 500px;
+    height: 74px;
+    text-align: center;
+  }
+  .other-func {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .other-func img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .other-func img:hover {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 10px;
+  }
+
+  .sub-menu {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-menu a {
+    text-decoration: none;
+    font-family: "Leiko";
+    font-weight: 400;
+    font-size: 16px;
+    width: 65px;
+    height: 44px;
+    color: #fff8e8;
+  }
+
+  .current {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .menu a:hover {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 0px 0px 30px 30px;
+  }
+  /* SECTION-1 */
+
+  .section-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 584px;
+  }
+
+  .section1-blur {
+    display: none;
+  }
+
+  .section1-blur img {
+    display: none;
+  }
+
+  .section-1-container {
+    position: relative;
+    height: 478px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    padding: 2rem;
+
+    border-radius: 35px;
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+
+    border-top: 2px solid #a8715c;
+    border-right: 3px solid #a8715c;
+  }
+
+  .section-1-img img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .section-1 h1 {
+    font-family: var(--Font-style2);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px rgba(32, 19, 22, 0.62),
+      0px 3px 6px rgba(32, 19, 22, 0.6), 0px 11px 11px rgba(32, 19, 22, 0.52),
+      0px 25px 15px rgba(32, 19, 22, 0.31), 0px 44px 18px rgba(32, 19, 22, 0.09),
+      0px 69px 19px rgba(32, 19, 22, 0.01);
+    position: absolute;
+    top: -2rem;
+    left: 20px;
+  }
+
+  .section-1 h2 {
+    align-self: flex-start;
+    font-family: var(--Font-style2);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2),
+      0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  .section-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-1-text p {
+    color: #fff;
+    text-overflow: ellipsis;
+    font-family: var(--Font-Style);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 218.5%; /* 39.33px */
+    text-transform: capitalize;
+  }
+
+  .btn {
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .btn1 {
+    color: #f8e4be;
+    background: none;
+    font-family: var(--Font-Style);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgba(247, 225, 188, 0.1);
+  }
+
+  /* SECTION 2 */
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-2 h1,
+  .section-3 h1,
+  .section-4 h1 {
+    font-family: "Dancing Script";
+    font-size: 60px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-2 .vector1 {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    gap: 10px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 290px;
+    height: 275px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 155px;
+    height: 178px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    width: 310px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 31.647px;
+  }
+
+  .arrow-buttons img {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .arrow-buttons img:hover {
+    background-color: rgba(141, 104, 94, 0.7);
+  }
+
+  .arrow-buttons :nth-child(1) {
+    rotate: 180deg;
+  }
+
+  .section-2 .vector2 {
+    display: none;
+  }
+
+  /* SECTION 3 */
+
+  .section-3 .vector3 {
+    display: none;
+  }
+
+  .section-3 .vector4 {
+    display: none;
+  }
+
+  /* SECTION 4 */
+
+  .section-4 .vector5 {
+    display: none;
+  }
+
+  /* SUBSCRIBE SECTION */
+
+  .section-10 {
+    position: relative;
+    height: 357px;
+    display: flex;
+    padding: 50px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+
+    overflow: hidden;
+
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .section-10 p {
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-10 input[type="email"] {
+    width: 540px;
+    height: 54px;
+    padding: 14px 40px 14px 40px;
+
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+
+    color: #9d8781;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-10 input::placeholder {
+    color: #9d8781;
+  }
+
+  .section-10 button {
+    cursor: pointer;
+
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 24px;
+    text-transform: capitalize;
+
+    padding: 12px 36px;
+
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .section-10 button:hover {
+    background-color: #3a1b1a;
+  }
+
+  .end-space {
+    position: relative;
+    height: 200px;
+  }
+
+  footer {
+    position: relative;
+    height: 400px;
+
+    background: url("project imgs/footer\ bg.png") no-repeat
+      rgba(173, 113, 74, 0.35) 50%;
+    background-size: cover;
+    mix-blend-mode: lighten;
+  }
+
+  .footer-links {
+    position: absolute;
+    top: 5em;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-links h1 {
+    color: #fff3e0;
+
+    font-family: "Leiko";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a:hover {
+    color: #ab9675;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .contacts p {
+    color: #fff3e0;
+
+    font-family: "Adamina";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .contacts img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #footer-graphics {
+    position: absolute;
+    top: -5em;
+    left: 2em;
+    width: 270.048px;
+    height: 450.548px;
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 2em;
+    left: 22rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .credits p {
+    color: rgba(255, 243, 224, 0.65);
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .socials {
+    position: absolute;
+    top: -1em;
+    right: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .socials p {
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-links img {
+    width: 25.919px;
+    height: 25.919px;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    padding: 0px 34px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #Daniels-Logo {
+    height: 74px;
+    flex-shrink: 0;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+    height: 74px;
+    text-align: center;
+  }
+  .other-func {
+    padding-top: 15px;
+  }
+  .other-func img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .other-func img:hover {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 10px;
+  }
+
+  .sub-menu {
+    padding-top: 20px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-menu a {
+    text-decoration: none;
+    width: 86px;
+    height: 74px;
+    font-family: "Leiko";
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff8e8;
+  }
+
+  .current {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .menu a:hover {
+    background: linear-gradient(
+      93.99deg,
+      rgba(223, 195, 157, 0.4) -9.94%,
+      rgba(248, 228, 190, 0.4) 19.83%,
+      rgba(223, 195, 157, 0.4) 50.71%,
+      rgba(248, 228, 190, 0.4) 81.26%,
+      rgba(248, 228, 190, 0.4) 111.66%
+    );
+    border-radius: 0px 0px 30px 30px;
+  }
+  /* SECTION-1 */
+
+  .section-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 584px;
+  }
+
+  .section1-blur {
+    display: none;
+  }
+
+  .section1-blur img {
+    display: none;
+  }
+
+  .section-1-container {
+    position: absolute;
+    top: 103px;
+    left: 172.1px;
+    width: 1175px;
+    height: 478px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 3rem;
+
+    border-radius: 35px;
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+
+    border-top: 2px solid #a8715c;
+    border-right: 3px solid #a8715c;
+  }
+
+  .section-1-img img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .section-1 h1 {
+    font-family: var(--Font-style2);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px rgba(32, 19, 22, 0.62),
+      0px 3px 6px rgba(32, 19, 22, 0.6), 0px 11px 11px rgba(32, 19, 22, 0.52),
+      0px 25px 15px rgba(32, 19, 22, 0.31), 0px 44px 18px rgba(32, 19, 22, 0.09),
+      0px 69px 19px rgba(32, 19, 22, 0.01);
+    position: absolute;
+    top: -3rem;
+    left: 40px;
+  }
+
+  .section-1 h2 {
+    align-self: flex-start;
+    font-family: var(--Font-style2);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--Services-Color);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2),
+      0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  .section-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-1-text p {
+    color: #fff;
+    text-overflow: ellipsis;
+    font-family: var(--Font-Style);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 218.5%; /* 39.33px */
+    text-transform: capitalize;
+  }
+
+  .btn {
+    align-self: flex-start;
+    display: inline-flex;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .btn1 {
+    color: #f8e4be;
+    background: none;
+    font-family: var(--Font-Style);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgba(247, 225, 188, 0.1);
+  }
+
+  /* SECTION 2 */
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    position: relative;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section-2 h1,
+  .section-3 h1,
+  .section-4 h1 {
+    font-family: "Dancing Script";
+    font-size: 60px;
+    background: linear-gradient(
+      262deg,
+      #f8e4be 14.64%,
+      #fff3e0 40.26%,
+      #fff8e8 62%,
+      #dfc39d 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-2 .vector1 {
+    display: none;
+  }
+
+  .recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    gap: 20px;
+  }
+
+  .products {
+    overflow: hidden;
+    position: relative;
+    width: 367px;
+    height: 388px;
+    border-radius: 35px;
+  }
+
+  .visual-of-product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(173, 113, 74, 0.35);
+  }
+
+  .more-info-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    border-radius: 50%;
+  }
+
+  .more-info-icon:hover {
+    background-color: #3a1b1a;
+  }
+
+  .drinks-img {
+    width: 225px;
+    height: 300px;
+  }
+
+  .shop-icon-recom {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+  }
+
+  .name-of-prod {
+    height: 60px;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .name-of-prod p {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210%;
+    text-transform: capitalize;
+  }
+
+  .name-of-prod img {
+    height: 21.647px;
+  }
+
+  .section-2 .vector2 {
+    display: none;
+  }
+
+  /* SECTION 3 */
+
+  .section-3 .vector3 {
+    display: none;
+  }
+
+  .section-3 .vector4 {
+    display: none;
+  }
+
+  /* SECTION 4 */
+
+  .section-4 .vector5 {
+    display: none;
+  }
+
+  /* SUBSCRIBE SECTION */
+
+  .section-10 {
+    position: relative;
+    height: 357px;
+    display: flex;
+    padding: 50px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+
+    overflow: hidden;
+
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .section-10 p {
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-10 input[type="email"] {
+    width: 540px;
+    height: 54px;
+    padding: 14px 40px 14px 40px;
+
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+
+    color: #9d8781;
+    font-family: "Leiko";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .section-10 input::placeholder {
+    color: #9d8781;
+  }
+
+  .section-10 button {
+    cursor: pointer;
+
+    color: #f8e4be;
+    font-family: "Leiko";
+    font-size: 24px;
+    text-transform: capitalize;
+
+    padding: 12px 36px;
+
+    border-radius: 49px;
+    border: 2px solid #e0a872;
+    background: rgba(247, 225, 188, 0.3);
+  }
+
+  .section-10 button:hover {
+    background-color: #3a1b1a;
+  }
+
+  #sec-10-effect-1 {
+    position: absolute;
+    left: 2em;
+    top: -6em;
+  }
+  #sec-10-effect-2 {
+    position: absolute;
+    left: -7em;
+  }
+  #bell {
+    display: none;
+  }
+
+  .end-space {
+    position: relative;
+    height: 200px;
+  }
+
+  footer {
+    position: relative;
+    height: 488px;
+
+    background: url("project imgs/footer\ bg.png") no-repeat
+      rgba(173, 113, 74, 0.35) 50%;
+    background-size: cover;
+    mix-blend-mode: lighten;
+  }
+
+  .footer-links {
+    position: absolute;
+    top: 5em;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 41px;
+  }
+
+  .footer-links h1 {
+    color: #fff3e0;
+
+    font-family: "Leiko";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .footer-links a:hover {
+    color: #ab9675;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 20px 30px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .contacts p {
+    color: #fff3e0;
+
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .contacts img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #footer-graphics {
+    position: absolute;
+    top: -5em;
+    left: 2em;
+    width: 370.048px;
+    height: 550.548px;
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 2em;
+    left: 564.4375px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .credits p {
+    color: rgba(255, 243, 224, 0.65);
+    font-family: "Adamina";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .socials {
+    position: absolute;
+    top: -1.5em;
+    right: 7em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .socials p {
+    color: #fff3e0;
+    font-family: "Leiko";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-links img {
+    width: 25.919px;
+    height: 25.919px;
+  }
+}
